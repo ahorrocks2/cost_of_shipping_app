@@ -32,12 +32,10 @@ class Parcel
       weight_cost = weight_cost.+(5)
     end
 
-    if speed == "One Day"
+    if speed.downcase() == "fast"
       speed_cost = speed_cost.+(5)
-    elsif speed == "Three Day"
+    elsif speed.downcase() == "standard"
       speed_cost = speed_cost.+(3)
-    else
-      speed_cost = speed_cost.+(1)
     end
 
     if self.volume() < 10

@@ -10,7 +10,7 @@ describe(Parcel) do
 
     it('will return the amount of the cost to ship') do
       test_parcel = Parcel.new(2, 2, 2)
-      expect(test_parcel.cost_to_ship(50, 3, "One Day")).to(eq(8))
+      expect(test_parcel.cost_to_ship(50, 3, "Fast")).to(eq(8))
     end
   end
 
