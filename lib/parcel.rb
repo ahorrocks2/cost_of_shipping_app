@@ -1,9 +1,11 @@
 class Parcel
   define_method(:initialize) do |length, width, height|
-    #code
+    @length = length
+    @width = width
+    @height = height
   end
 
   define_method(:volume) do
-    #code
+    @length.*(@width).*(@height)
   end
 end
